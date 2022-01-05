@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #f7e4d4;
+}
+h1 {
+  font-family: EB Garamond;
+  color: #467745;
+}
+
+input,
+textarea {
+  font-family: Montserrat;
+  font-size: 16px;
+  color: #467745;
+  margin: 1rem;
+  border: none;
+  border-radius: 2px;
+  font-weight: bold;
+  padding: 15px;
+}
+
+label {
+  font-family: Montserrat;
+  font-size: 16px;
+  color: #467745;
+  font-weight: bold;
+}
+
+button {
+  font-family: Montserrat;
+  font-size: 21px;
+  background-color: #467745;
+  color: #f7e4d4;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  width: 280px;
+  height: 80px;
+  letter-spacing: 0.2em;
+}
+@media only screen and (min-width: 521px) {
+  /*desktop*/
+  h1 {
+    font-size: 48px;
+  }
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  input[type="text"] {
+    width: 480px;
+    height: 64px;
+  }
+
+  textarea {
+    width: 480px;
+    height: 120px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  /*mobile*/
+  h1 {
+    font-size: 36px;
+    align-items: left;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 20px;
+  }
+  input[type="text"] {
+    width: 100%-40px;
+    height: 64px;
+  }
+  textarea {
+    max-width: 100%-40px;
+    height: 120px;
+  }
+  button {
+    margin: 1rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
